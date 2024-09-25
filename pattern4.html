@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- 
+    i/p1:vishnu
+    o/p:v 
+        i s 
+        h n u 
+    i/p2:bujji
+    o/p:b 
+        u j 
+        j i * 
+        i/p3:vishnuv
+        o/p:v 
+            i s 
+            h n u 
+            v * * * 
+    -->
+    <h2>open the console for output</h2>
+    <script>
+      str = prompt("enter a name :");
+      (rows = 1), (ind = 0);
+      a = true;
+      while (a) {
+        res = "";
+        for (i = 1; i <= rows; i++) {
+          if (str[ind] != undefined) {
+            res += str[ind] + " ";
+            ind++;
+          } else {
+            res += "* ";
+            a = false;
+          }
+        }
+        console.log(res);
+        rows++;
+      }
+
+      // name=prompt("enter name :");
+      // a=0;
+      // rows=Math.ceil(name.length/2)
+      // for(i=0;i<=rows;i++){
+      //     res="";
+      //     for(j=1;j<=i;j++){
+      //         if( a!=name.length){
+      //             res+=name[a]+" ";
+      //             a++;
+      //         }
+      //         else if(a==name.length)
+      //             res+="* "
+      //     }
+
+      //     console.log(res);
+      // }
+    </script>
+  </body>
+</html>
